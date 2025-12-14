@@ -1,12 +1,18 @@
-function App() {
-  const isLoggedIn = true;
+import Navbar from "./Navbar";
+import Hero from "./Hero";
+import Services from "./Services";
+import About from "./About";
+import Contact from "./Contact";
 
-  if (isLoggedIn) {
-    return <h1>Welcome Back!</h1>;
-  } else {
-    return <h1>Please Log In</h1>;
-  }
+export default function App() {
+return (
+<div className="font-sans">
+<Navbar />
+<Hero />
+<Services />
+<About />
+<Contact />
+</div>
+);
 }
-
-export default App ;
 

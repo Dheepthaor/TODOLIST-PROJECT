@@ -38,6 +38,7 @@ function New() {
   const handleChange = (day, index, value) => {
     const newTasks = { ...tasks };
     newTasks[day][index] = value;
+    console.log(newTasks)
     setTasks(newTasks);
   };
 
@@ -88,7 +89,7 @@ function New() {
                 />
 
                 <button
-                  className="done-btn"
+                 
                   style={{backgroundColor:"#41ad4aff",width:"70px",height:"40px",borderRadius:"20px",border:"none"}}
                   onClick={() => handleDone(day, i)}
                 >

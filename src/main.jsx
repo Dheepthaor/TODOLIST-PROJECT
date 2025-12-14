@@ -1,18 +1,10 @@
-import React from 'react'
-import { createRoot } from 'react-dom/client'
-import ToDolist from './ToDoList'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./index.css";  // <-- THIS LINE IS IMPORTANT
 
-
-
-
-
-
-
-
-
-
-createRoot(document.getElementById('root')).render(
-<ToDolist/>
-  
-)
-
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
